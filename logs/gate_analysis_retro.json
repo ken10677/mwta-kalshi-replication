@@ -1,0 +1,558 @@
+{
+  "generated": "2026-08-27T03:04:28.850294+00:00",
+  "pairs": 57808,
+  "date_range": [
+    "2025-08-06",
+    "2026-08-24"
+  ],
+  "gate": {
+    "min_n": 200,
+    "min_clusters": 30
+  },
+  "buckets": [
+    {
+      "side": "no",
+      "bucket": "0-9",
+      "n": 3317,
+      "clusters": 1694,
+      "mean_pl_cents": -2.37,
+      "ci95": [
+        -3.404,
+        -1.416
+      ],
+      "avg_cost_cents": 95.4,
+      "roi_pct": -2.483,
+      "passes_gate": false
+    },
+    {
+      "side": "no",
+      "bucket": "10-19",
+      "n": 4532,
+      "clusters": 2788,
+      "mean_pl_cents": -2.6,
+      "ci95": [
+        -3.805,
+        -1.436
+      ],
+      "avg_cost_cents": 89.0,
+      "roi_pct": -2.921,
+      "passes_gate": false
+    },
+    {
+      "side": "no",
+      "bucket": "20-29",
+      "n": 5110,
+      "clusters": 3619,
+      "mean_pl_cents": -6.383,
+      "ci95": [
+        -7.812,
+        -4.968
+      ],
+      "avg_cost_cents": 81.1,
+      "roi_pct": -7.874,
+      "passes_gate": false
+    },
+    {
+      "side": "no",
+      "bucket": "30-39",
+      "n": 7530,
+      "clusters": 4809,
+      "mean_pl_cents": -10.534,
+      "ci95": [
+        -11.797,
+        -9.269
+      ],
+      "avg_cost_cents": 78.7,
+      "roi_pct": -13.385,
+      "passes_gate": false
+    },
+    {
+      "side": "no",
+      "bucket": "40-49",
+      "n": 12877,
+      "clusters": 8301,
+      "mean_pl_cents": -24.419,
+      "ci95": [
+        -25.36,
+        -23.509
+      ],
+      "avg_cost_cents": 79.7,
+      "roi_pct": -30.621,
+      "passes_gate": false
+    },
+    {
+      "side": "no",
+      "bucket": "50-59",
+      "n": 10892,
+      "clusters": 6440,
+      "mean_pl_cents": -24.995,
+      "ci95": [
+        -26.193,
+        -23.782
+      ],
+      "avg_cost_cents": 74.3,
+      "roi_pct": -33.626,
+      "passes_gate": false
+    },
+    {
+      "side": "no",
+      "bucket": "60-69",
+      "n": 4744,
+      "clusters": 3979,
+      "mean_pl_cents": -7.042,
+      "ci95": [
+        -8.705,
+        -5.367
+      ],
+      "avg_cost_cents": 43.2,
+      "roi_pct": -16.304,
+      "passes_gate": false
+    },
+    {
+      "side": "no",
+      "bucket": "70-79",
+      "n": 4138,
+      "clusters": 3135,
+      "mean_pl_cents": -8.194,
+      "ci95": [
+        -9.992,
+        -6.373
+      ],
+      "avg_cost_cents": 32.9,
+      "roi_pct": -24.926,
+      "passes_gate": false
+    },
+    {
+      "side": "no",
+      "bucket": "80-89",
+      "n": 2823,
+      "clusters": 2409,
+      "mean_pl_cents": -10.775,
+      "ci95": [
+        -12.35,
+        -9.185
+      ],
+      "avg_cost_cents": 26.0,
+      "roi_pct": -41.378,
+      "passes_gate": false
+    },
+    {
+      "side": "no",
+      "bucket": "90-99",
+      "n": 1845,
+      "clusters": 1534,
+      "mean_pl_cents": -12.718,
+      "ci95": [
+        -14.466,
+        -10.944
+      ],
+      "avg_cost_cents": 23.0,
+      "roi_pct": -55.273,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "0-9",
+      "n": 3317,
+      "clusters": 1694,
+      "mean_pl_cents": -13.598,
+      "ci95": [
+        -15.443,
+        -11.741
+      ],
+      "avg_cost_cents": 18.4,
+      "roi_pct": -73.948,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "10-19",
+      "n": 4532,
+      "clusters": 2788,
+      "mean_pl_cents": -8.948,
+      "ci95": [
+        -10.475,
+        -7.456
+      ],
+      "avg_cost_cents": 20.1,
+      "roi_pct": -44.537,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "20-29",
+      "n": 5110,
+      "clusters": 3619,
+      "mean_pl_cents": -9.15,
+      "ci95": [
+        -10.677,
+        -7.613
+      ],
+      "avg_cost_cents": 30.8,
+      "roi_pct": -29.706,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "30-39",
+      "n": 7530,
+      "clusters": 4809,
+      "mean_pl_cents": -20.698,
+      "ci95": [
+        -22.286,
+        -19.061
+      ],
+      "avg_cost_cents": 48.9,
+      "roi_pct": -42.326,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "40-49",
+      "n": 12877,
+      "clusters": 8301,
+      "mean_pl_cents": -28.625,
+      "ci95": [
+        -29.632,
+        -27.639
+      ],
+      "avg_cost_cents": 70.2,
+      "roi_pct": -40.756,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "50-59",
+      "n": 10892,
+      "clusters": 6440,
+      "mean_pl_cents": -30.122,
+      "ci95": [
+        -31.551,
+        -28.683
+      ],
+      "avg_cost_cents": 77.8,
+      "roi_pct": -38.719,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "60-69",
+      "n": 4744,
+      "clusters": 3979,
+      "mean_pl_cents": -8.591,
+      "ci95": [
+        -10.222,
+        -6.953
+      ],
+      "avg_cost_cents": 68.5,
+      "roi_pct": -12.532,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "70-79",
+      "n": 4138,
+      "clusters": 3135,
+      "mean_pl_cents": -6.577,
+      "ci95": [
+        -8.346,
+        -4.811
+      ],
+      "avg_cost_cents": 78.1,
+      "roi_pct": -8.417,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "80-89",
+      "n": 2823,
+      "clusters": 2409,
+      "mean_pl_cents": -3.758,
+      "ci95": [
+        -5.257,
+        -2.253
+      ],
+      "avg_cost_cents": 85.7,
+      "roi_pct": -4.387,
+      "passes_gate": false
+    },
+    {
+      "side": "yes",
+      "bucket": "90-99",
+      "n": 1845,
+      "clusters": 1534,
+      "mean_pl_cents": -5.288,
+      "ci95": [
+        -6.943,
+        -3.692
+      ],
+      "avg_cost_cents": 92.8,
+      "roi_pct": -5.701,
+      "passes_gate": false
+    }
+  ],
+  "mid_calibration": [
+    {
+      "bucket": "0-9",
+      "n": 3255,
+      "clusters": 1744,
+      "implied_pct": 6.4,
+      "actual_pct": 5.4,
+      "ci95": [
+        4.5,
+        6.4
+      ]
+    },
+    {
+      "bucket": "10-19",
+      "n": 4345,
+      "clusters": 2839,
+      "implied_pct": 14.8,
+      "actual_pct": 13.3,
+      "ci95": [
+        12.1,
+        14.6
+      ]
+    },
+    {
+      "bucket": "20-29",
+      "n": 5206,
+      "clusters": 3698,
+      "implied_pct": 24.9,
+      "actual_pct": 23.7,
+      "ci95": [
+        22.4,
+        25.2
+      ]
+    },
+    {
+      "bucket": "30-39",
+      "n": 7920,
+      "clusters": 5002,
+      "implied_pct": 35.5,
+      "actual_pct": 30.5,
+      "ci95": [
+        29.2,
+        31.8
+      ]
+    },
+    {
+      "bucket": "40-49",
+      "n": 15253,
+      "clusters": 9241,
+      "implied_pct": 46.3,
+      "actual_pct": 43.5,
+      "ci95": [
+        42.6,
+        44.3
+      ]
+    },
+    {
+      "bucket": "50-59",
+      "n": 9480,
+      "clusters": 6005,
+      "implied_pct": 52.9,
+      "actual_pct": 50.1,
+      "ci95": [
+        48.8,
+        51.5
+      ]
+    },
+    {
+      "bucket": "60-69",
+      "n": 4745,
+      "clusters": 3981,
+      "implied_pct": 64.5,
+      "actual_pct": 65.0,
+      "ci95": [
+        63.4,
+        66.5
+      ]
+    },
+    {
+      "bucket": "70-79",
+      "n": 3768,
+      "clusters": 2958,
+      "implied_pct": 74.4,
+      "actual_pct": 75.4,
+      "ci95": [
+        73.6,
+        77.1
+      ]
+    },
+    {
+      "bucket": "80-89",
+      "n": 2458,
+      "clusters": 2082,
+      "implied_pct": 84.5,
+      "actual_pct": 85.7,
+      "ci95": [
+        84.2,
+        87.1
+      ]
+    },
+    {
+      "bucket": "90-99",
+      "n": 1378,
+      "clusters": 1158,
+      "implied_pct": 93.1,
+      "actual_pct": 94.0,
+      "ci95": [
+        92.7,
+        95.4
+      ]
+    }
+  ],
+  "global": {
+    "display": {
+      "n": 57808,
+      "gap_pp": -2.435,
+      "gap_ci": [
+        -2.953,
+        -1.905
+      ],
+      "brier": 0.20054,
+      "brier_ci": [
+        0.19838,
+        0.20267
+      ],
+      "slope": 0.9857,
+      "slope_ci": [
+        0.9654,
+        1.0063
+      ],
+      "intercept": -0.0178,
+      "intercept_ci": [
+        -0.0281,
+        -0.0074
+      ]
+    },
+    "midpoint": {
+      "n": 57808,
+      "gap_pp": -1.979,
+      "gap_ci": [
+        -2.506,
+        -1.433
+      ],
+      "brier": 0.19991,
+      "brier_ci": [
+        0.19787,
+        0.20197
+      ],
+      "slope": 1.0379,
+      "slope_ci": [
+        1.0171,
+        1.059
+      ],
+      "intercept": -0.037,
+      "intercept_ci": [
+        -0.0475,
+        -0.0262
+      ]
+    }
+  },
+  "horizon": [
+    {
+      "stratum": "<24h",
+      "n": 43324,
+      "clusters": 15467,
+      "gap_pp": -1.89,
+      "ci": [
+        -2.43,
+        -1.33
+      ]
+    },
+    {
+      "stratum": "24h-7d",
+      "n": 13103,
+      "clusters": 4139,
+      "gap_pp": -1.73,
+      "ci": [
+        -3.22,
+        -0.27
+      ]
+    },
+    {
+      "stratum": ">=7d",
+      "n": 1381,
+      "clusters": 131,
+      "gap_pp": -7.15,
+      "ci": [
+        -12.21,
+        -2.23
+      ]
+    }
+  ],
+  "fee_sensitivity": [
+    {
+      "mult": 0.0,
+      "pooled_no": {
+        "mean": -12.987,
+        "ci": [
+          -13.544,
+          -12.425
+        ]
+      },
+      "pooled_yes": {
+        "mean": -16.946,
+        "ci": [
+          -17.624,
+          -16.244
+        ]
+      }
+    },
+    {
+      "mult": 0.035,
+      "pooled_no": {
+        "mean": -13.987,
+        "ci": [
+          -14.544,
+          -13.425
+        ]
+      },
+      "pooled_yes": {
+        "mean": -17.946,
+        "ci": [
+          -18.624,
+          -17.244
+        ]
+      }
+    },
+    {
+      "mult": 0.07,
+      "pooled_no": {
+        "mean": -14.522,
+        "ci": [
+          -15.078,
+          -13.96
+        ]
+      },
+      "pooled_yes": {
+        "mean": -18.567,
+        "ci": [
+          -19.242,
+          -17.867
+        ]
+      }
+    },
+    {
+      "mult": 0.14,
+      "pooled_no": {
+        "mean": -15.538,
+        "ci": [
+          -16.092,
+          -14.983
+        ]
+      },
+      "pooled_yes": {
+        "mean": -19.723,
+        "ci": [
+          -20.395,
+          -19.032
+        ]
+      }
+    }
+  ],
+  "cross_stratum_overlap_tickers": 770,
+  "verdict_pass": []
+}

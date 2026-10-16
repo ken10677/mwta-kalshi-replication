@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite the paper below."
+title: "Miscalibration Without Tradable Alpha: replication package"
+authors:
+  - family-names: Swan
+    given-names: Lawton K.
+    affiliation: "Innovation Academy, University of Florida"
+date-released: 2026-10-16
+url: "https://github.com/ken10677/mwta-kalshi-replication"
+preferred-citation:
+  type: article
+  title: "Miscalibration Without Tradable Alpha: Displayed Prices, Actionable Quotes, and Fees in a Regulated Prediction Market"
+  authors:
+    - family-names: Swan
+      given-names: Lawton K.
+  year: 2026
+  notes: "Preprint; under review."

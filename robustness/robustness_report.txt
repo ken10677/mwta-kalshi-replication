@@ -1,0 +1,71 @@
+==============================================================================
+PART 1 — VERIFICATION AGAINST FREEZE + MANUSCRIPT
+==============================================================================
+
+[Table 2] retro midpoint calibration — deterministic columns:
+     0-9: n=  3255 clus= 1744 implied=  6.4% actual=  5.4%  OK
+   10-19: n=  4345 clus= 2839 implied= 14.8% actual= 13.3%  OK
+   20-29: n=  5206 clus= 3698 implied= 24.9% actual= 23.7%  OK
+   30-39: n=  7920 clus= 5002 implied= 35.5% actual= 30.5%  OK
+   40-49: n= 15253 clus= 9241 implied= 46.3% actual= 43.5%  OK
+   50-59: n=  9480 clus= 6005 implied= 52.9% actual= 50.1%  OK
+   60-69: n=  4745 clus= 3981 implied= 64.5% actual= 65.0%  OK
+   70-79: n=  3768 clus= 2958 implied= 74.4% actual= 75.4%  OK
+   80-89: n=  2458 clus= 2082 implied= 84.5% actual= 85.7%  OK
+   90-99: n=  1378 clus= 1158 implied= 93.1% actual= 94.0%  OK
+
+[Table 1] retro global rows:
+   display: gap -2.43 [-2.97, -1.91] pp | slope 0.986 [0.965, 1.005] | intercept -0.018
+  midpoint: gap -1.98 [-2.51, -1.45] pp | slope 1.038 [1.017, 1.059] | intercept -0.037
+
+[Table 3] retro taker means (display-bucketed, 0.07 fee):
+  all 20 bucket-direction means: OK — match frozen Table 3 exactly
+  avg entry spread by display bucket (diagnostic): 0-9: 13.8c, 10-19: 9.1c, 20-29: 11.9c, 30-39: 27.6c, 40-49: 50.0c, 50-59: 52.1c, 60-69: 11.7c, 70-79: 11.0c, 80-89: 11.7c, 90-99: 15.8c
+
+[Table 5] retro horizon strata:
+     <24h: n= 43324 clus=15467 gap=-1.89pp  OK
+   24h-7d: n= 13103 clus= 4139 gap=-1.73pp  OK
+     >=7d: n=  1381 clus=  131 gap=-7.15pp  OK
+
+[Table 4] retro pooled fee sensitivity (point estimates):
+  mult=0.000:  BUY NO -12.99c  BUY YES -16.95c
+  mult=0.035:  BUY NO -13.99c  BUY YES -17.95c
+  mult=0.070:  BUY NO -14.52c  BUY YES -18.57c
+  mult=0.140:  BUY NO -15.54c  BUY YES -19.72c
+
+[Prospective] deterministic verification:
+  40-49 midpoint cell: n=42 implied=45.5% actual=19.0%  (manuscript says n=76, 46.8% — freeze says n=42, 45.5%)
+  20-29 BUY NO: n=56 mean=+6.98c  (manuscript says +6.75, n=55 — freeze says +6.98, n=56)
+  display global gap: -5.86 [-9.21, -2.53] pp (n=937)
+  midpoint global gap: -7.50 [-12.31, -3.02] pp (n=583)
+
+VERIFICATION: 94 checks passed, 0 failed.
+
+==============================================================================
+PART 2 — NEW (POST-FREEZE) ROBUSTNESS ANALYSES
+==============================================================================
+
+[A] Retro midpoint calibration by entry spread (a - b):
+    stratum      n   clus mean mid | global gap pp [95% CI] | mid-curve (30<=mid<60) implied->actual, gap [CI]
+       1-2c  13610   5994    42.8c |  -0.64 [ -1.62,  +0.33] | mid-curve n= 4711: 44.5%->43.9%, gap -0.69 [-2.26, +0.86]
+       3-5c  12976   6663    46.4c |  -0.17 [ -1.05,  +0.70] | mid-curve n= 4879: 44.7%->45.2%, gap +0.54 [-0.84, +1.94]
+      6-10c   5329   3072    48.1c |  +0.04 [ -1.35,  +1.41] | mid-curve n= 2377: 45.5%->45.8%, gap +0.25 [-1.90, +2.39]
+     11-20c   3135   1591    40.8c |  +0.93 [ -1.39,  +3.21] | mid-curve n= 1201: 42.8%->43.8%, gap +1.01 [-2.84, +4.85]
+      >=21c  22758   8615    46.4c |  -4.68 [ -5.57,  -3.81] | mid-curve n=19485: 46.3%->40.6%, gap -5.66 [-6.53, -4.79]
+
+  Composition: share of each midpoint bucket with spread >= 21c:
+  0-9: 0.0%, 10-19: 8.2%, 20-29: 22.5%, 30-39: 44.5%, 40-49: 69.9%, 50-59: 55.9%, 60-69: 21.1%, 70-79: 16.8%, 80-89: 4.5%, 90-99: 0.0%
+
+[B] Retro paired gap difference, gap_display - gap_midpoint = mean(mid - display):
+  all two-sided rows (n=57808, clus=19718): -0.46 [-0.55, -0.36] pp
+  rows with explicit candle display price (n=22136): -1.18 [-1.42, -0.93] pp
+  note: rows without explicit display fall back to display:=round(mid), so the all-rows contrast is diluted toward zero; the explicit-price subset is the honest display-layer contrast.
+  90-99 display-bucket rows (n=1845): mean display 93.6%, mean mid 84.9%, actual 88.5%
+
+[C] Prospective display calibration restricted to the 583 two-sided markets:
+  display gap on 583: -6.95 [-11.93, -2.21] pp   (vs midpoint gap on same 583: -7.50 [-12.31, -3.02] pp)
+  paired wedge mean(mid - display) on 583: +0.55 [-1.28, +2.36] pp
+  90-99 display bucket within two-sided (n=86): implied 95.0% actual 81.4%
+    actual-rate 95% CI: [70.6, 91.4]
+
+artifacts: /tmp/claude-0/-home-claude/ac977dd6-8df0-549f-b41f-6c76b8015eb7/scratchpad/ijf/robustness/robustness_report.txt , robustness.json
