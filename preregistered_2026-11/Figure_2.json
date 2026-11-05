@@ -1,6 +1,6 @@
 {
  "P0": {
-  "title": "A. All political markets",
+  "title": "A. All political markets (P0)",
   "n": 6922,
   "share": 1.0,
   "buckets": [
@@ -87,7 +87,7 @@
   ]
  },
  "P2": {
-  "title": "B. Spread \u2264 50\u00a2",
+  "title": "C. Spread \u2264 50\u00a2 (P2)",
   "n": 6051,
   "share": 0.874,
   "buckets": [
@@ -174,7 +174,7 @@
   ]
  },
  "P3": {
-  "title": "C. Spread \u2265 51\u00a2",
+  "title": "D. Spread \u2265 51\u00a2 (P3)",
   "n": 871,
   "share": 0.126,
   "buckets": [
@@ -201,6 +201,93 @@
     "yes": 42.76,
     "lo": 34.49,
     "hi": 51.5
+   }
+  ]
+ },
+ "P1": {
+  "title": "B. Spread \u2264 50\u00a2, 1\u20132-market events (P1)",
+  "n": 1438,
+  "share": 0.208,
+  "buckets": [
+   {
+    "bucket": 0,
+    "n": 431,
+    "implied": 3.23,
+    "yes": 2.55,
+    "lo": 1.15,
+    "hi": 4.18
+   },
+   {
+    "bucket": 1,
+    "n": 137,
+    "implied": 14.16,
+    "yes": 16.79,
+    "lo": 10.87,
+    "hi": 23.02
+   },
+   {
+    "bucket": 2,
+    "n": 88,
+    "implied": 24.23,
+    "yes": 21.59,
+    "lo": 12.64,
+    "hi": 30.34
+   },
+   {
+    "bucket": 3,
+    "n": 71,
+    "implied": 34.37,
+    "yes": 29.58,
+    "lo": 19.72,
+    "hi": 40.85
+   },
+   {
+    "bucket": 4,
+    "n": 62,
+    "implied": 44.03,
+    "yes": 38.71,
+    "lo": 26.98,
+    "hi": 50.0
+   },
+   {
+    "bucket": 5,
+    "n": 63,
+    "implied": 54.64,
+    "yes": 49.21,
+    "lo": 37.7,
+    "hi": 61.54
+   },
+   {
+    "bucket": 6,
+    "n": 76,
+    "implied": 65.41,
+    "yes": 61.84,
+    "lo": 50.0,
+    "hi": 72.38
+   },
+   {
+    "bucket": 7,
+    "n": 50,
+    "implied": 75.03,
+    "yes": 76.0,
+    "lo": 64.0,
+    "hi": 86.0
+   },
+   {
+    "bucket": 8,
+    "n": 118,
+    "implied": 85.13,
+    "yes": 75.42,
+    "lo": 67.8,
+    "hi": 83.9
+   },
+   {
+    "bucket": 9,
+    "n": 342,
+    "implied": 95.71,
+    "yes": 97.66,
+    "lo": 95.93,
+    "hi": 99.12
    }
   ]
  }

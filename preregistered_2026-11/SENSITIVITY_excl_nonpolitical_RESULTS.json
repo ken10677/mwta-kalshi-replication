@@ -1,0 +1,118 @@
+{
+ "universe": {
+  "markets": 6423,
+  "events": 1606,
+  "share_spread>=51": 0.133,
+  "share_events3plus": 0.763
+ },
+ "midpoint": {
+  "P0_all": {
+   "n": 6423,
+   "events": 1606,
+   "slope": 0.971,
+   "slope_ci": [
+    0.94,
+    1.004
+   ],
+   "intercept": -0.036,
+   "gap": -4.62,
+   "gap_ci": [
+    -5.89,
+    -3.2
+   ]
+  },
+  "P1_clean_spread<=50_events1-2": {
+   "n": 1427,
+   "events": 848,
+   "slope": 0.999,
+   "slope_ci": [
+    0.959,
+    1.038
+   ],
+   "intercept": -0.012,
+   "gap": -1.2,
+   "gap_ci": [
+    -2.39,
+    0.0
+   ]
+  },
+  "P2_spread<=50": {
+   "n": 5570,
+   "events": 1488,
+   "slope": 0.987,
+   "slope_ci": [
+    0.952,
+    1.018
+   ],
+   "intercept": -0.026,
+   "gap": -3.01,
+   "gap_ci": [
+    -4.18,
+    -1.75
+   ]
+  },
+  "P3_spread>=51": {
+   "n": 853,
+   "events": 205,
+   "slope": 2.37,
+   "slope_ci": [
+    1.901,
+    2.871
+   ],
+   "intercept": -0.811,
+   "gap": -15.11,
+   "gap_ci": [
+    -20.13,
+    -9.7
+   ]
+  },
+  "P4_spread<=4": {
+   "n": 2729,
+   "events": 951,
+   "slope": 0.895,
+   "slope_ci": [
+    0.824,
+    0.962
+   ],
+   "intercept": -0.004,
+   "gap": -2.58,
+   "gap_ci": [
+    -4.14,
+    -1.13
+   ]
+  }
+ },
+ "trade_price": {
+  "P0_all": {
+   "n": 2489,
+   "events": 737,
+   "slope": 0.893,
+   "slope_ci": [
+    0.82,
+    0.965
+   ],
+   "intercept": -0.002,
+   "gap": -3.08,
+   "gap_ci": [
+    -4.8,
+    -1.4
+   ]
+  },
+  "P1_clean_spread<=50_events1-2": {
+   "n": 328,
+   "events": 270,
+   "slope": 0.864,
+   "slope_ci": [
+    0.71,
+    1.011
+   ],
+   "intercept": 0.041,
+   "gap": -1.78,
+   "gap_ci": [
+    -6.02,
+    2.28
+   ]
+  }
+ },
+ "verdict_preregistered": "not replicated (P0 slope CI not entirely above 1)"
+}
