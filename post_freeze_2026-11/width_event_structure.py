@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Book width, event structure, and midpoint calibration (post-freeze, exploratory).
-Swan (2026), "Who Said Fifty?" Every number in Sections 3-4 of the JEF manuscript
+Swan (2026). Every number in Sections 3-4 of the revised manuscript
 that is not in the frozen exhibits comes from this script.
 
 Reads the frozen data (data-freeze-v1): logs/retro_pairs.jsonl for the retrospective

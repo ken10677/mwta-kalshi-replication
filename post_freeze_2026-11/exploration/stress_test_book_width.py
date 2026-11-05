@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Stress tests for the book-width (bid-ask spread) result, post-freeze and exploratory.
-Swan, "Who Said Fifty?" (2026). Reads the frozen retrospective stratum
+Swan (2026). Reads the frozen retrospective stratum
 (logs/retro_pairs.jsonl) with the same loader rules as tools/gate_analysis.py.
 
 Usage: python stress_test_book_width.py [LOGS_DIR] [OUT_DIR]
