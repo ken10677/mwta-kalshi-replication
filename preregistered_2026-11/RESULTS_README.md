@@ -10,3 +10,7 @@
 **Pre-specified comparison P3 (spread ≥ 51¢, 12.6% of markets):** slope 2.414 [1.991, 2.880]; mean gap −14.82 [−20.07, −9.54].
 
 Everything else in later files is labeled exploratory.
+
+## Added after the pre-registered results (not pre-registered)
+- `EXPLORATORY_political_eventsize.py` / `.json`: political markets split by spread x event size, and the share of wide-book midpoints between 40 and 60. Exploratory.
+- `DESCRIPTIVE_figure2.py`, `Figure_2.json/.png/.pdf`: reliability buckets for the pre-specified subsets P0, P2, P3 (descriptive figure).
