@@ -1,7 +1,6 @@
 # Post-freeze analyses (November 2026)
 
-These scripts support the revised manuscript **"Who Said Fifty? Empty Order Books,
-Calibration, and Taker Returns in a Regulated Prediction Market."** They read the
+These scripts support a revised manuscript, currently under anonymized review. They read the
 same frozen data as everything else in this repository (`logs/`, release
 `data-freeze-v1`) and use the same filters, fee rule, and event clusters as
 `tools/gate_analysis.py`.
@@ -18,6 +17,7 @@ pip install numpy pandas matplotlib
 python post_freeze_2026-11/width_event_structure.py logs post_freeze_2026-11/out   # ~5 min
 python post_freeze_2026-11/fe_coverage.py           logs post_freeze_2026-11/out
 python post_freeze_2026-11/prospective_horizon.py   logs post_freeze_2026-11/out
+python post_freeze_2026-11/review_checks.py         logs post_freeze_2026-11/out
 python post_freeze_2026-11/make_figure1.py post_freeze_2026-11/out/width_event_structure.json post_freeze_2026-11/out/Figure_1
 ```
 
@@ -40,6 +40,7 @@ exhibits can differ in the second decimal; the paper reports the frozen ones.
 | Table 5 Panel B, Sections 5.1-5.2 (taker returns by spread; gate in narrow books) | `width_event_structure.py` | `taker`, `gate_narrow50` |
 | Section 6 (prospective by width; entry horizon) | `width_event_structure.py`, `prospective_horizon.py` | `prospective`; `median_htc_hours`, `share_ge_7d` |
 | Figure 1 | `make_figure1.py` | `reliability`, `composition`, `gap` |
+| Slope intervals, entries within 3 h of close (Table 3 Panel D), segment by series type, further family drops (Table 3 Panel B), prospective by event size | `review_checks.py` | `slope`, `near_close`, `excl_lt3h`, `segment_by_type`, `drop_more`, `prospective_by_eventsize` |
 
 Tables 1, 4, and 5 Panel A, the prospective results, the all-markets horizon
 split, and the coherence scans are the frozen exhibits produced by

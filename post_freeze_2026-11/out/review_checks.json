@@ -1,0 +1,201 @@
+{
+ "slope": {
+  "all": {
+   "slope": 1.038,
+   "lo": 1.017,
+   "hi": 1.059
+  },
+  "spread<=50": {
+   "slope": 1.032,
+   "lo": 1.01,
+   "hi": 1.053
+  },
+  "all_except_segment": {
+   "slope": 1.032,
+   "lo": 1.011,
+   "hi": 1.054
+  }
+ },
+ "near_close": {
+  "segment_n": 8386,
+  "segment_tth_lt3h_n": 1323,
+  "segment_tth_lt3h": {
+   "est": -29.96,
+   "lo": -33.37,
+   "hi": -26.09,
+   "n": 1323,
+   "clusters": 207
+  },
+  "segment_tth_ge3h": {
+   "est": -10.71,
+   "lo": -12.47,
+   "hi": -8.96,
+   "n": 7063,
+   "clusters": 1521
+  },
+  "segment_tth_p5_p50": [
+   0.3,
+   22.1
+  ],
+  "top_series_lt3h": {
+   "KXWNBAREB": 276,
+   "KXWNBA3PT": 180,
+   "KXWNBAPTS": 170,
+   "KXMLBTB": 142,
+   "KXMLBSB": 130,
+   "KXWNBA4QSPREAD": 98
+  },
+  "all_tth_lt3h_n": 4190,
+  "all_tth_lt3h_share": 0.072
+ },
+ "excl_lt3h": {
+  "n": 53618,
+  "all": {
+   "est": -1.19,
+   "lo": -1.73,
+   "hi": -0.65,
+   "n": 53618,
+   "clusters": 18893
+  },
+  "spread<=50": {
+   "est": 0.0,
+   "lo": -0.65,
+   "hi": 0.67,
+   "n": 37984,
+   "clusters": 13276
+  },
+  "segment": {
+   "est": -10.71,
+   "lo": -12.47,
+   "hi": -8.95,
+   "n": 7063,
+   "clusters": 1521
+  },
+  "segment_share": 0.132,
+  "all_except_segment": {
+   "est": 0.25,
+   "lo": -0.28,
+   "hi": 0.78,
+   "n": 46555,
+   "clusters": 17876
+  },
+  "wide_1-2": {
+   "est": 1.35,
+   "lo": 0.88,
+   "hi": 1.81,
+   "n": 8571,
+   "clusters": 5102
+  },
+  "segment_contribution": -1.41
+ },
+ "segment_by_type": {
+  "soccer_match_result": {
+   "est": -7.81,
+   "lo": -9.15,
+   "hi": -6.47,
+   "n": 724,
+   "clusters": 285,
+   "yes": 34.3,
+   "mid": 42.1
+  },
+  "soccer_total_spread_ladders": {
+   "est": -15.59,
+   "lo": -17.49,
+   "hi": -13.71,
+   "n": 3981,
+   "clusters": 893,
+   "yes": 29.9,
+   "mid": 45.5
+  },
+  "other": {
+   "est": -12.93,
+   "lo": -16.33,
+   "hi": -9.38,
+   "n": 3681,
+   "clusters": 550,
+   "yes": 34.3
+  }
+ },
+ "drop_more": [
+  {
+   "dropped": "WNBA",
+   "n_dropped": 6248,
+   "n_dropped_in_segment": 1892,
+   "narrow": {
+    "est": -0.2,
+    "lo": -0.68,
+    "hi": 0.29,
+    "n": 36411,
+    "clusters": 13634
+   },
+   "wide_3+": {
+    "est": -13.53,
+    "lo": -15.38,
+    "hi": -11.67,
+    "n": 6494,
+    "clusters": 1490
+   }
+  },
+  {
+   "dropped": "NBA summer league",
+   "n_dropped": 1546,
+   "n_dropped_in_segment": 358,
+   "narrow": {
+    "est": -0.33,
+    "lo": -0.95,
+    "hi": 0.29,
+    "n": 39551,
+    "clusters": 13940
+   },
+   "wide_3+": {
+    "est": -13.62,
+    "lo": -15.43,
+    "hi": -11.84,
+    "n": 8028,
+    "clusters": 1706
+   }
+  },
+  {
+   "dropped": "all basketball (KXWNBA, KXNBA)",
+   "n_dropped": 7794,
+   "n_dropped_in_segment": 2250,
+   "narrow": {
+    "est": -0.33,
+    "lo": -0.81,
+    "hi": 0.14,
+    "n": 35223,
+    "clusters": 13562
+   },
+   "wide_3+": {
+    "est": -13.35,
+    "lo": -15.26,
+    "hi": -11.43,
+    "n": 6136,
+    "clusters": 1468
+   }
+  }
+ ],
+ "prospective_by_eventsize": {
+  "1-2": {
+   "est": -2.53,
+   "lo": -7.04,
+   "hi": 2.22,
+   "n": 222,
+   "clusters": 220
+  },
+  "3+": {
+   "est": -10.56,
+   "lo": -17.76,
+   "hi": -4.14,
+   "n": 361,
+   "clusters": 47
+  },
+  "3+_narrow": {
+   "est": -10.7,
+   "lo": -17.92,
+   "hi": -3.87,
+   "n": 329,
+   "clusters": 47
+  }
+ }
+}

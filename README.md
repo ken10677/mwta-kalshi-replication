@@ -12,8 +12,7 @@ midpoint to the executable quote to the fee-adjusted taker return.
 
 ## Update, November 2026
 
-A revised manuscript, *Who Said Fifty? Empty Order Books, Calibration, and Taker Returns in a
-Regulated Prediction Market*, builds on this package. Its post-freeze analyses of book width and event
+A revised manuscript (currently under anonymized review) builds on this package. Its post-freeze analyses of book width and event
 structure, with a crosswalk to every new exhibit and the exploratory runs that led to them, are in
 [`post_freeze_2026-11/`](post_freeze_2026-11/README.md).
 
