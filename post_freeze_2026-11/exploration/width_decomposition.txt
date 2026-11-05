@@ -1,0 +1,52 @@
+[1] Spread distribution (retrospective, n=57,808)
+    <=4c: n= 23363  share  40.4%
+   5-20c: n= 11687  share  20.2%
+  21-50c: n=  5689  share   9.8%
+   >=51c: n= 17069  share  29.5%
+  near-empty (bid<=5, ask>=90): 7164  share 12.4%
+  spread >70c: 13616 share 23.6%
+
+[2] Global midpoint calibration by spread group
+    <=4c: gap   -0.45 [  -1.21,   +0.32] n= 23363 clus= 8968  slope 1.012  intercept -0.010  Brier 0.1764
+   5-20c: gap   +0.23 [  -0.85,   +1.33] n= 11687 clus= 5589  slope 1.045  intercept -0.019  Brier 0.1886
+  21-50c: gap   -0.17 [  -1.85,   +1.39] n=  5689 clus= 2508  slope 1.151  intercept -0.069  Brier 0.2053
+   >=51c: gap   -6.19 [  -7.16,   -5.28] n= 17069 clus= 6906  slope 1.578  intercept -0.333  Brier 0.2380
+   <=50c: gap   -0.22 [  -0.83,   +0.42] n= 40739 clus=14012  slope 1.032  intercept -0.016  Brier 0.1840
+     all: gap   -1.98 [  -2.52,   -1.43] n= 57808 clus=19718  slope 1.038  intercept -0.037  Brier 0.1999
+
+[3] Midpoint gap by spread group x event size (markets per event in sample)
+    <=4c: 1-2 mkts   +0.03 [  -0.23,   +0.30] n= 13536 clus= 7625 | 3+ mkts   -1.12 [  -2.90,   +0.66] n=  9827 clus= 1343
+   5-20c: 1-2 mkts   +1.05 [  +0.43,   +1.71] n=  6564 clus= 4419 | 3+ mkts   -0.83 [  -3.24,   +1.46] n=  5123 clus= 1170
+  21-50c: 1-2 mkts   +3.27 [  +1.88,   +4.61] n=  2270 clus= 1656 | 3+ mkts   -2.45 [  -5.00,   +0.12] n=  3419 clus=  852
+   >=51c: 1-2 mkts   +1.12 [  +0.65,   +1.60] n=  8683 clus= 5178 | 3+ mkts  -13.75 [ -15.46,  -12.01] n=  8386 clus= 1728
+
+[4] Pooled taker returns (cents/contract) by spread group, fee 0 and 0.07
+    <=4c: NO fee0 [np.float64(-0.69), np.float64(-1.48), np.float64(0.05)]  NO fee.07 [np.float64(-2.39), np.float64(-3.12), np.float64(-1.58)] | YES fee0 [np.float64(-1.59), np.float64(-2.34), np.float64(-0.83)]  YES fee.07 [np.float64(-3.3), np.float64(-4.04), np.float64(-2.54)]
+   5-20c: NO fee0 [np.float64(-4.59), np.float64(-5.69), np.float64(-3.52)]  NO fee.07 [np.float64(-6.36), np.float64(-7.44), np.float64(-5.24)] | YES fee0 [np.float64(-4.13), np.float64(-5.24), np.float64(-3.07)]  YES fee.07 [np.float64(-5.94), np.float64(-7.03), np.float64(-4.8)]
+  21-50c: NO fee0 [np.float64(-17.06), np.float64(-18.72), np.float64(-15.4)]  NO fee.07 [np.float64(-18.74), np.float64(-20.37), np.float64(-17.04)] | YES fee0 [np.float64(-17.4), np.float64(-19.12), np.float64(-15.72)]  YES fee.07 [np.float64(-19.23), np.float64(-20.85), np.float64(-17.56)]
+   >=51c: NO fee0 [np.float64(-34.21), np.float64(-35.14), np.float64(-33.25)]  NO fee.07 [np.float64(-35.31), np.float64(-36.23), np.float64(-34.37)] | YES fee0 [np.float64(-46.58), np.float64(-47.61), np.float64(-45.68)]  YES fee.07 [np.float64(-47.88), np.float64(-48.85), np.float64(-46.92)]
+   <=50c: NO fee0 [np.float64(-4.1), np.float64(-4.77), np.float64(-3.45)]  NO fee.07 [np.float64(-5.81), np.float64(-6.45), np.float64(-5.18)] | YES fee0 [np.float64(-4.53), np.float64(-5.15), np.float64(-3.92)]  YES fee.07 [np.float64(-6.28), np.float64(-6.88), np.float64(-5.64)]
+     all: NO fee0 [np.float64(-12.99), np.float64(-13.57), np.float64(-12.42)]  NO fee.07 [np.float64(-14.52), np.float64(-15.11), np.float64(-13.95)] | YES fee0 [np.float64(-16.95), np.float64(-17.63), np.float64(-16.29)]  YES fee.07 [np.float64(-18.57), np.float64(-19.24), np.float64(-17.93)]
+
+[5] Gate check within narrow books (<=20c), display-price buckets, fee 0.07 (exploratory subgroup)
+  BUY  NO  0-9 :   -1.80 [  -2.81,   -0.81] n=  2739 clus= 1519
+  BUY  NO 10-19:   -1.74 [  -3.02,   -0.55] n=  3975 clus= 2584
+  BUY  NO 20-29:   -3.83 [  -5.35,   -2.30] n=  4065 clus= 3109
+  BUY  NO 30-39:   -4.38 [  -6.28,   -2.75] n=  4400 clus= 3505
+  BUY  NO 40-49:   -3.81 [  -5.36,   -2.25] n=  4606 clus= 3876
+  BUY  NO 50-59:   -4.74 [  -6.27,   -3.07] n=  4165 clus= 3373
+  BUY  NO 60-69:   -3.44 [  -5.14,   -1.80] n=  3861 clus= 3364
+  BUY  NO 70-79:   -4.16 [  -5.94,   -2.41] n=  3392 clus= 2677
+  BUY  NO 80-89:   -5.38 [  -6.85,   -3.87] n=  2402 clus= 2082
+  BUY  NO 90-99:   -4.10 [  -5.51,   -2.66] n=  1445 clus= 1255
+  BUY YES  0-9 :   -3.76 [  -4.80,   -2.70] n=  2739 clus= 1519
+  BUY YES 10-19:   -4.86 [  -6.01,   -3.64] n=  3975 clus= 2584
+  BUY YES 20-29:   -4.66 [  -6.17,   -3.00] n=  4065 clus= 3109
+  BUY YES 30-39:   -4.46 [  -6.07,   -2.72] n=  4400 clus= 3505
+  BUY YES 40-49:   -4.74 [  -6.39,   -3.27] n=  4606 clus= 3876
+  BUY YES 50-59:   -3.74 [  -5.30,   -2.27] n=  4165 clus= 3373
+  BUY YES 60-69:   -5.07 [  -6.82,   -3.38] n=  3861 clus= 3364
+  BUY YES 70-79:   -4.39 [  -6.21,   -2.61] n=  3392 clus= 2677
+  BUY YES 80-89:   -1.72 [  -3.19,   -0.22] n=  2402 clus= 2082
+  BUY YES 90-99:   -1.65 [  -3.05,   -0.23] n=  1445 clus= 1255
+  any narrow-book cell passing the gate: False

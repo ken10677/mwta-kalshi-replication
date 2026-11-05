@@ -1,0 +1,49 @@
+{
+ "segment_n": 8386,
+ "segment_share_in_mixed_cells": 0.912,
+ "mixed_cells_3plus": {
+  "wide_gap": -13.9,
+  "narrow_gap": -2.2,
+  "wide_n": 7652,
+  "narrow_n": 9308
+ },
+ "club_soccer": {
+  "n": 7803,
+  "share_wide": 0.646,
+  "gap_narrow": -3.75,
+  "gap_wide": -13.43,
+  "midcurve_gap_narrow": -7.81,
+  "midcurve_gap_wide": -14.2,
+  "midcurve_n_narrow": 1131
+ },
+ "midcurve_by_width_eventsize": {
+  "narrow_1-2": {
+   "est": 0.75,
+   "lo": 0.17,
+   "hi": 1.31,
+   "n": 10052,
+   "clusters": 6800
+  },
+  "narrow_3+": {
+   "est": -1.65,
+   "lo": -3.87,
+   "hi": 0.59,
+   "n": 6064,
+   "clusters": 1767
+  },
+  "wide_1-2": {
+   "est": 1.06,
+   "lo": 0.57,
+   "hi": 1.56,
+   "n": 8468,
+   "clusters": 5091
+  },
+  "wide_3+": {
+   "est": -14.32,
+   "lo": -16.13,
+   "hi": -12.59,
+   "n": 8069,
+   "clusters": 1697
+  }
+ }
+}

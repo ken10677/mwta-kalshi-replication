@@ -10,6 +10,13 @@ while walking the price object from the displayed price to the order-book
 midpoint to the executable quote to the fee-adjusted taker return.
 **A displayed probability is a forecast; an actionable quote is an offer.**
 
+## Update, November 2026
+
+A revised manuscript, *Who Said Fifty? Empty Order Books, Calibration, and Taker Returns in a
+Regulated Prediction Market*, builds on this package. Its post-freeze analyses of book width and event
+structure, with a crosswalk to every new exhibit and the exploratory runs that led to them, are in
+[`post_freeze_2026-11/`](post_freeze_2026-11/README.md).
+
 ## Reproduce every exhibit
 
 Requires Python 3.10+; `numpy` for the robustness script only.
